@@ -3,6 +3,7 @@ python:
   - "3.8"
 env:
   - DJANGO_SETTINGS_MODULE="core.settings"
+  - SECRET_KEY="test"
 services:
   - postgresql
   - docker
