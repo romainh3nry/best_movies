@@ -45,6 +45,9 @@ INSTALLED_APPS = [
 
     #Third party
     'environ',
+
+    #local
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +138,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Custom users
+
+AUTH_USER_MODEL = 'users.CustomUser'
