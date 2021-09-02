@@ -11,4 +11,10 @@ install:
 before_script: 
   - pip install docker-compose
 script:
+  - export SECRET_KEY="test"
+  - export DB_NAME="best_movies"
+  - export DB_PASSWORD="test"
+  - export DB_USER="postgres"
+  - export DB_PORT=5432
+  - export DB_HOST="db"
   - docker-compose run web sh -c "python manage.py test"
