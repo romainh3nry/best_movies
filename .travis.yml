@@ -9,6 +9,6 @@ services:
 before_script: 
   - pip install docker-compose
   - touch core/.env
-  - export SECRET_KEY=TEST > core/.env
+  - echo SECRET_KEY=$SECRET_KEY >> core/.env
 script:
   - docker-compose run web sh -c "python manage.py test"
