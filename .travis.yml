@@ -11,4 +11,5 @@ install:
 before_script: 
   - pip install docker-compose
 script:
+  - export SECRET_KEY="test"
   - docker-compose run web sh -c "python manage.py test"
