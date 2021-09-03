@@ -1,3 +1,26 @@
-h1 {
-    color:red;
+.navbar {
+    background-color: #40B0F9;
+}
+
+.navbar-brand {
+    font-size:35px;
+    font-family: 'Lobster', cursive;
+}
+
+.nav-link {
+    font-size:20px;
+    color:white;
+}
+
+.link-hover-effect{
+    padding-bottom:5px;
+    background: linear-gradient(white, white) center bottom; /*OR bottom right OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat:no-repeat;
+    transition: all 0.45s;
+}
+
+.link-hover-effect:hover {
+    text-decoration: none;
+    background-size: 100% 2px;
 }
