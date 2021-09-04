@@ -14,12 +14,12 @@ class HomePageTests(TestCase):
 
     def test_homepage_status_code(self):
         self.assertEqual(self.response.status_code, 200)
-    
-    def test_homepage_url_name(self):
-        self.assertEqual(self.response.status_code, 200)
 
     def test_homepage_template(self):
         self.assertTemplateUsed(self.response, 'pages/home.html')
+    
+    def test_homepage_contains_correct_html(self):
+        self.assertContains(self.response, 'Bienvenue sur Best Movies !')
 
     def test_homepage_url_resolves_homepageview(self):
         view = resolve('/')

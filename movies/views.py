@@ -7,3 +7,4 @@ from .models import Movies
 class MoviesListView(ListView):
     model = Movies
     template_name = 'movies/movies_list.html'
+    context_object_name = 'movies_list'
