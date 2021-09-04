@@ -17,4 +17,4 @@ script:
   - export DB_USER="postgres"
   - export DB_PORT=5432
   - export DB_HOST="db"
-  - docker-compose run web sh -c "python manage.py test"
+  - docker-compose run web sh -c "python3 manage.py test"
