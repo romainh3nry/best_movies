@@ -11,6 +11,7 @@ psycopg2-binary = "*"
 django-environ = "*"
 coverage = "*"
 requests = "*"
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.8"
